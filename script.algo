@@ -1,0 +1,24 @@
+FUNCTION palindrome(ch:String ,left: 0 ,right: ch.length-1): Boolean 
+VAR
+res = Boolean
+BEGIN 
+    if(ch.[left]!=ch.[right]) THEN
+        RETURN false
+    if else (left<right) THEN
+        if(ch.[left]!=ch.[right]) THEN
+            palindrome(ch,++left,--right)
+        END_IF
+    END_IF
+    return res=true
+END
+
+FUNCTION Puissance(x:INTEGER,n:INTEGER):INTEGER
+BEGIN
+    if (n=1) THEN
+        return x
+    else
+        return x*Puissance(x,n-1)
+    END_IF
+END
+
+
